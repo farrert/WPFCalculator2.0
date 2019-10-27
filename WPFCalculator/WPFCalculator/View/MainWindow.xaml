@@ -1,0 +1,290 @@
+﻿<Window x:Class="WPFCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCalculator"
+        xmlns:viewModels="clr-namespace:WPFCalculator.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <viewModels:CalculatorViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="20"
+            HorizontalAlignment="Center">
+            <Label
+                HorizontalAlignment="Center"
+                Content="WPFCalculator 2.0"
+                FontSize="24"/>
+
+            <StackPanel
+            Orientation="Vertical"
+            Margin="20"
+            HorizontalAlignment="Center">
+
+            </StackPanel>
+            <StackPanel
+            Orientation="Vertical"
+            Margin="20"
+            HorizontalAlignment="Center">
+                <TextBox
+                HorizontalAlignment="Center"
+                Text="{Binding DisplayContent}"
+                FontSize="12"
+                Width="150"
+                Height="100" TextChanged="TextBox_TextChanged"
+                IsReadOnly="True"/>
+            </StackPanel>
+            <StackPanel
+            Orientation="Vertical"
+            Margin="20"
+            HorizontalAlignment="Center">
+                <Button
+                Content="="
+                Height="50"
+                Width="150"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="=">
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel
+            HorizontalAlignment="Left"
+            Margin="40"
+            Orientation="Vertical"
+            Width="220">
+
+            <StackPanel
+            HorizontalAlignment="Left"
+            Margin="40"
+            Orientation="Horizontal"
+            Width="220">
+            </StackPanel>
+            <StackPanel
+                HorizontalAlignment="Left"
+                Orientation="Horizontal"
+                Width="220"
+                >
+                <Button
+                Content="1"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="1"/>
+                
+                <Button
+                Content="2"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="2">
+                </Button>
+                <Button
+                Content="3"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="3">
+                </Button>
+            </StackPanel>
+            <StackPanel
+                    HorizontalAlignment="Left"
+                Orientation="Horizontal"
+                Width="220">
+                <Button
+                Content="4"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="4">
+                </Button>
+                <Button
+                Content="5"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="5">
+                </Button>
+                <Button
+                Content="6"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="6">
+                </Button>
+            </StackPanel>
+            <StackPanel
+                    HorizontalAlignment="Left"
+                Orientation="Horizontal"
+                Width="220">
+                <Button
+                Content="7"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="7">
+                </Button>
+                <Button
+                Content="8"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="8">
+                </Button>
+                <Button
+                Content="9"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="9">
+                </Button>
+            </StackPanel>
+            <StackPanel
+                    HorizontalAlignment="Left"
+                Orientation="Horizontal"
+                Width="220">
+                <Button
+                Content="."
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter=".">
+                </Button>
+                <Button
+                Content="0"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="0">
+                </Button>
+                <Button
+                Content="CE"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonNumberCommand}" CommandParameter="CE">
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel
+            HorizontalAlignment="Right"
+            Margin="40"
+            Orientation="Vertical"
+            Width="220">
+
+            <StackPanel
+            HorizontalAlignment="Right"
+            Margin="40"
+            Orientation="Horizontal"
+            Width="220">
+            </StackPanel>
+            <StackPanel
+                HorizontalAlignment="Right"
+                Orientation="Horizontal"
+                Width="220"
+                >
+                <Button
+                Content="+"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="+"/>
+                <Button
+                Content="^2"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="Sqr">
+                </Button>
+                <Button
+                Content="Sin"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="Sin">
+                </Button>
+            </StackPanel>
+            <StackPanel
+                    HorizontalAlignment="Right"
+                Orientation="Horizontal"
+                Width="220">
+                <Button
+                Content="-"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="-">
+                </Button>
+                <Button
+                Content="SqRt"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="SqRt">
+                </Button>
+                <Button
+                Content="Cos"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="Cos">
+                </Button>
+            </StackPanel>
+            <StackPanel
+                    HorizontalAlignment="Right"
+                Orientation="Horizontal"
+                Width="220">
+                <Button
+                Content="*"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="*">
+                </Button>
+                <Button
+                Content="%"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="%">
+                </Button>
+                <Button
+                Content="Tan"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="Tan">
+                </Button>
+            </StackPanel>
+            <StackPanel
+                    HorizontalAlignment="Right"
+                Orientation="Horizontal"
+                Width="220">
+                <Button
+                Content="/"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="/">
+                </Button>
+                <Button
+                Content="M"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="M">
+                </Button>
+                <Button
+                Content="MC"
+                Height="50"
+                Width="50"
+                Margin="5"
+                Command="{Binding ButtonOperationCommand}" CommandParameter="MC">
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

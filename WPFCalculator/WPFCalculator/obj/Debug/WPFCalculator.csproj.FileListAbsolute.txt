@@ -1,0 +1,16 @@
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\bin\Debug\WPFCalculator.exe.config
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\bin\Debug\WPFCalculator.exe
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\bin\Debug\WPFCalculator.pdb
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator.csprojAssemblyReference.cache
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\View\MainWindow.g.cs
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\App.g.cs
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\GeneratedInternalTypeHelper.g.cs
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator_MarkupCompile.cache
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator_MarkupCompile.lref
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\View\MainWindow.baml
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator.g.resources
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator.Properties.Resources.resources
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator.csproj.GenerateResource.cache
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator.csproj.CoreCompileInputs.cache
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator.exe
+Q:\WPFCalculator2.0\WPFCalculator\WPFCalculator\obj\Debug\WPFCalculator.pdb
